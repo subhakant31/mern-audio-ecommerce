@@ -11,69 +11,61 @@ function ProductDescriptionPage(props) {
   };
 
   return (
-    <div className="wrapper">
-      <div className="product-description">
-        <span className="product-description__price">USD 350</span>
-        <h2 className="product-description__title">
-          tma-2 <br></br> hd wireless
-        </h2>
-        <div className="product-description__contents">
-          <nav className="product-description__contents__nav">
-            <ul className="list">
-              <li className="list__item">
-                <a
-                  href="#"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setActive("overview");
-                  }}
-                  className={selectedNavItem === "overview" ? "active" : ""}
-                >
-                  overview
-                </a>
-              </li>
-              <li className="list__item">
-                <a
-                  href="#"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setActive("features");
-                  }}
-                  className={selectedNavItem === "features" ? "active" : ""}
-                >
-                  features
-                </a>
-              </li>
-              <li className="list__item">
-                <a
-                  href="#"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setActive("specification");
-                  }}
-                  className={
-                    selectedNavItem === "specification" ? "active" : ""
-                  }
-                >
-                  specification
-                </a>
-              </li>
-            </ul>
-          </nav>
+    <div className="product-description">
+      <span className="product-description__price">USD 350</span>
+      <h2 className="product-description__title">
+        tma-2 <br></br> hd wireless
+      </h2>
+      <div className="product-description__contents">
+        <nav className="product-description__contents__nav">
+          <ul className="list">
+            <li className="list__item">
+              <a
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setActive("overview");
+                }}
+                className={selectedNavItem === "overview" ? "active" : ""}
+              >
+                overview
+              </a>
+            </li>
+            <li className="list__item">
+              <a
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setActive("features");
+                }}
+                className={selectedNavItem === "features" ? "active" : ""}
+              >
+                features
+              </a>
+            </li>
+            <li className="list__item">
+              <a
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setActive("specification");
+                }}
+                className={selectedNavItem === "specification" ? "active" : ""}
+              >
+                specification
+              </a>
+            </li>
+          </ul>
+        </nav>
 
-          {selectedNavItem === "overview" ? <ProductOverview /> : <></>}
-          {selectedNavItem === "features" ? <ProductFeatures /> : <></>}
-          {selectedNavItem === "specification" ? (
-            <ProductSpecification />
-          ) : (
-            <></>
-          )}
-        </div>
-
-        <button className="product-description__add-to-cart-btn">
-          add to cart
-        </button>
+        {selectedNavItem === "overview" ? <ProductOverview /> : <></>}
+        {selectedNavItem === "features" ? <ProductFeatures /> : <></>}
+        {selectedNavItem === "specification" ? <ProductSpecification /> : <></>}
       </div>
+      
+      <button className="product-description__add-to-cart-btn">
+        add to cart
+      </button>
     </div>
   );
 }
