@@ -1,0 +1,19 @@
+@import '../../styles/partials/variable';
+@import '../../styles/partials/mixins';
+
+.heading {
+    padding-top:150px;
+    text-align: center;
+
+    &__main {
+        @include font($font-size:51.048, $font-color:$color-white, $font-weight:700);
+        @include text-properties-common($letter-spacing:0.638px);
+        margin-bottom: 10px;
+    }
+
+    &__sub-text {
+        @include font($font-weight:700, $font-color:$color-white, $font-size:14);
+        @include text-properties-common($letter-spacing:0.2px, $line-height:20px);
+       
+    }
+}

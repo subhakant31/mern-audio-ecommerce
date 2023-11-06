@@ -1,0 +1,38 @@
+@import '../../../styles/partials/variable';
+@import '../../../styles/partials/font';
+@import '../../../styles/partials/mixins';
+
+.form {
+    padding-top:250px;
+    width:90%;
+    margin:auto;
+
+    &__list {
+        @include flex-container($justify-content: space-evenly);
+        margin : 20px 0;
+  
+        &__listitem {
+          width: 40px;
+  
+          .item {
+            padding: 15px;
+            border-radius: 10px;
+            background-color: $color-white;
+            height: 60px;
+          }
+        }
+      }
+    
+
+    &__account {
+        @include font($font-size: 14, $font-style: normal, $font-weight: 400, $font-color:$color-white);
+        @include text-properties-common($line-height: 20px, $letter-spacing: 0.2px, $text-align:center);
+        margin:20px 0;
+
+        &__redirect {
+            color: $color-green;
+            text-decoration: underline;
+            margin-left: 5px;
+        }
+    }
+}
