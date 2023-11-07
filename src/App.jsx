@@ -8,7 +8,10 @@ function App(props)
 {
 	return(
 		<React.Fragment>
-			
+			<Routes>
+        <Route path="/home" element={<Homemenubar/>}></Route>
+        <Route path="/profile" element={<ProfileSetting/>}></Route>
+      </Routes>
 		</React.Fragment>
 	)
 }
