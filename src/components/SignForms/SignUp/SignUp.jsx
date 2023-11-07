@@ -2,9 +2,6 @@ import "./SignUp.scss";
 import { faEnvelope, faLock } from "@fortawesome/free-solid-svg-icons";
 import InputField from "../InputField/InputField";
 import Button from "../Button/Button";
-import AppleLogo from '../../../assets/images/apple.svg';
-import GoogleLogo from '../../../assets/images/google.svg';
-import FacebookLogo from '../../../assets/images/facebook-f.svg';
 
 function SignUp() {
     return (
@@ -15,6 +12,7 @@ function SignUp() {
                 placeholder="Email"
                 name="mail"
                 type="email"
+                title="Email"
                 icon={faEnvelope}
             />
             <InputField
@@ -23,6 +21,7 @@ function SignUp() {
                 placeholder="Password"
                 name="password"
                 type="password"
+                title="Password"
                 icon={faLock}
             />
             <Button
@@ -30,35 +29,35 @@ function SignUp() {
                 type="submit"
                 id="submit"
                 name="submit"
-                value="Sign in"
+                value="Sign Up"
             />
             <ul className="form__list">
-                <li className="form__list__listitem">
+                <li className="form__list__listitem"><a href="#">
                     <img
                         className="item"
-                        src={AppleLogo}
+                        src='./assets/images/apple.svg'
                         alt="apple logo"
-                    ></img>
+                    ></img></a>
                 </li>
-                <li className="form__list__listitem">
+                <li className="form__list__listitem"><a href="#">
                     <img
                         className="item"
-                        src={FacebookLogo}
+                        src='./assets/images/facebook-f.svg'
                         alt="facebook logo"
-                    ></img>
+                    ></img></a>
                 </li>
-                <li className="form__list__listitem">
+                <li className="form__list__listitem"><a href="#">
                     <img
                         className="item"
-                        src={GoogleLogo}
+                        src='./assets/images/google.svg'
                         alt="google logo"
-                    ></img>
+                    ></img></a>
                 </li>
             </ul>
             <p className="form__account">
                 If you have an account?
                 <a href="#" className="form__account__redirect">
-                    Sign In here
+                     Sign In here
                 </a>
             </p>
         </form>

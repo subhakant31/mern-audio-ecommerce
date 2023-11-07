@@ -9,7 +9,7 @@ function Button(props) {
   return (
     <div className="form__button">
       <label for ={forValue}></label>
-      <input type={type} id={id} name={nameValue} value={value}></input>
+      <input type={type} id={id} name={nameValue} value={value} tabIndex="0"></input>
     </div>
   );
 }

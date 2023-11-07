@@ -3,20 +3,18 @@
 @import "../../../styles/partials/mixins";
 
 .form__button {
-  
-
   input {
     border: none;
     outline: none;
+    cursor: pointer;
     background-color: $color-green;
-    @include font($font-size: 16, $font-style: normal, $font-weight: 700, $font-color: $color-white);
+    @include font($font-size: 16, $font-style: normal, $font-weight: $bold, $font-color: $color-white, $font-family: DM-Sans);
     @include text-properties-common(
       $line-height: 20px,
       $letter-spacing: 0.2px,
       $text-align: center
     );
     width: 100%;
-    margin:20px 0;
     padding: 15px;
     border-radius: 10px;
   }
