@@ -1,0 +1,26 @@
+@import "../../../../styles/partials/font";
+@import "../../../../styles/partials/variable";
+
+.suggested-product-card {
+  background-color: $color-white;
+  //   width: 155px;
+  //   height: 213px;
+  width: fit-content;
+  margin-right: 15px;
+  padding: 15px 10px;
+  border-radius: 10px;
+  &__title {
+    font-family: DM-Sans;
+    font-size: $small;
+    font-weight: $regular;
+    line-height: 1.125rem;
+    letter-spacing: 0.0125rem;
+  }
+  &__price {
+    font-family: DM-Sans;
+    font-size: $x-small;
+    font-weight: $bold;
+    line-height: 1rem;
+    letter-spacing: 0.0125rem;
+  }
+}

@@ -6,8 +6,8 @@ function App(props)
 {
 	return(
 		<React.Fragment>
-			<SignInPage/>
-			<SignUpPage/>
+			<SignInPage />
+			<SignUpPage />
 		</React.Fragment>
 	)
 }
