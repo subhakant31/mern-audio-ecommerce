@@ -4,17 +4,13 @@ import Homemenubar from "./components/Menu/HomeMenu";
 import "./App.scss"; 
 import { Route, Routes } from "react-router-dom";
 
-function App() {
-  return (
-    <React.Fragment>
-    
-        <Routes>
-          <Route path="/home" element={<Homemenubar/>} />
-          <Route path="/profile" element={<ProfileSetting/>} />
-        </Routes>
-    
-    </React.Fragment>
-  );
+function App(props)
+{
+	return(
+		<React.Fragment>
+			
+		</React.Fragment>
+	)
 }
 
 export default App;
