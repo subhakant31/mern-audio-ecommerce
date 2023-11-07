@@ -43,8 +43,8 @@ function ProfileEdit() {
           <span>personal</span>
           <ul className="personal-settings">
             <li>
-              <a href="">terms of use</a>
-              <a href="">privacy policy</a>
+              <a href="">report a bug</a>
+              <a href="">logout</a>
             </li>
           </ul>
         </div>
