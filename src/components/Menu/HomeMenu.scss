@@ -1,31 +1,35 @@
 @import "../../styles/index.scss";
 
-.menu {
-  width: 320px;
-  padding: 30px 24px;
-  @include flex-container(
-    $direction: null,
-    $justify-content: space-between,
-    $align-items: center,
-    $flex-wrap: nowrap
-  );
-  &__brand {
-    @include font(
-      $font-family: DM-Sans,
-      $font-color: $color-black,
-      $font-size: 19.048px,
-      $font-weight: $bold,
-      $font-style: null
-    );
-    letter-spacing: 0.238px;
-    text-transform: capitalize;
+  .menu{
+    width: 100%;
+    padding: 5px 25px;
     @include flex-container(
       $direction: null,
-      $justify-content: null,
+      $justify-content: space-between,
       $align-items: center,
       $flex-wrap: nowrap
     );
-    gap: 7.143px;
+     
+    &__brand {
+      &__name {
+        @include font(
+          $font-family: DM-Sans,
+          $font-color: $color-black,
+          $font-size: 19.048px,
+          $font-weight: $bold,
+          $font-style: null
+        );
+        letter-spacing: 0.238px;
+        text-transform: capitalize;
+      }
+      @include flex-container(
+        $direction: null,
+        $justify-content: null,
+        $align-items: center,
+        $flex-wrap: nowrap
+      );
+      gap: 7.143px;
+    }
   }
-}
+
 
