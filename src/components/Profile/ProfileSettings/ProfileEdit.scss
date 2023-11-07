@@ -1,0 +1,52 @@
+@import "../../../styles/index.scss";
+
+.settings {
+  border-top: 1px solid $color-grey-2;
+  width: 100%;
+  padding-bottom: 33px;
+  &__column {
+    @include width-property($width: 100%, $min-width: null, $max-width: 400px);
+    @include flex-container(
+      $direction: column,
+      $justify-content: null,
+      $align-items: flex-start,
+      $flex-wrap: nowrap
+    );
+
+    &__title {
+      @include font(
+        $font-family: DM-Sans,
+        $font-color: $color-grey-3,
+        $font-size: 14,
+        $font-weight: $regular,
+        $font-style: null
+      );
+      text-transform: capitalize;
+      padding: 20px 0 20px 24px; 
+    }
+
+    .list-item {
+      @include flex-container(
+        $direction: column,
+        $justify-content: null,
+        $align-items: flex-start,
+        $flex-wrap: nowrap
+      );
+
+      @include font(
+        $font-family: DM-Sans,
+        $font-color: $color-black,
+        $font-size: 16,
+        $font-weight: $regular,
+        $font-style: null
+      );
+      a {
+        width: 375px;
+        padding: 15px 0 15px 24px;
+        text-transform: capitalize;
+        border-bottom: 1px solid $color-grey-2;
+        letter-spacing: 0.2px;
+      }
+    }
+  }
+}
