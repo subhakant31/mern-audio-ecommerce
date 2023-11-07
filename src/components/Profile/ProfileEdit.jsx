@@ -1,7 +1,5 @@
 import React from "react";
-import "./ProfileEdit.scss";
-import profile from "../../images/profilepicture.svg";
-import back from "../../icons/left-arrow.svg";
+import "./ProfileEdit.scss"; 
 import { Link } from "react-router-dom";
 
 function ProfileEdit() {
@@ -10,14 +8,14 @@ function ProfileEdit() {
       <div className="settings">
         <div className="settings__menu">
           <Link to="/home" className="backwards">
-            <img src={back} alt="back arrow" />
+            <img src="./asserts/icons/left-arrow.svg" alt="back arrow" />
           </Link>
           <p>profile</p>
           <span></span>
         </div>
         <div className="settings__profile">
           <img
-            src={profile}
+            src="./asserts/images/profilepicture.svg"
             alt="profile picture"
             className="profile-picture"
           />
@@ -45,8 +43,8 @@ function ProfileEdit() {
           <span>personal</span>
           <ul className="personal-settings">
             <li>
-              <a href="">report a bug</a>
-              <a href="">logout</a>
+              <a href="">terms of use</a>
+              <a href="">privacy policy</a>
             </li>
           </ul>
         </div>
