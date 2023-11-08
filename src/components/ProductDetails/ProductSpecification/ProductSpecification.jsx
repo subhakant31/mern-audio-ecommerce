@@ -2,9 +2,9 @@ import "./ProductSpecification.scss";
 
 function ProductSpecification(props) {
   return (
-    <>
-      <h1>product specification</h1>
-    </>
+    <div className="product-specification">
+      <h3 className="product-specification__title">in-depth specification</h3>
+    </div>
   );
 }
 
