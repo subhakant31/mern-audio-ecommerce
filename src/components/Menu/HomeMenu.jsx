@@ -1,6 +1,5 @@
 import React from "react";
 import "./HomeMenu.scss";
-import { Link } from "react-router-dom";
 
 function HomeMenu() {
   return (
