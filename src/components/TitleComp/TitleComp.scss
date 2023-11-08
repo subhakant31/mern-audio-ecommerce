@@ -1,0 +1,32 @@
+@import "../../styles/partials/variable";
+@import "../../styles/partials/mixins";
+
+.title {
+  background-color: $color-white;
+  border: 1px solid $color-black;
+  &__list {
+    @include flex-container(
+      $justify-content: space-between,
+      $align-items: center
+    );
+    width: 90%;
+    margin: auto;
+    padding: 10px 0;
+
+    &__icon {
+      width: 24px;
+      height: 24px;
+    }
+    &__text {
+      @include font($font-size: 16, $font-style: normal, $font-weight: $bold, $font-family: DM-Sans);
+      line-height: 20px; /* 125% */
+      letter-spacing: 0.2px;
+      &.hide {
+        display:none;
+      }
+      &.show {
+        display: block;
+      }
+    }
+  }
+}

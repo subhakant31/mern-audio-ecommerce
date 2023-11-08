@@ -1,0 +1,32 @@
+@import "../../../styles/partials/variable";
+@import "../../../styles/partials/font";
+@import "../../../styles/partials/mixins";
+
+.form__input {
+    @include border-property($width:1px, $style:solid, $color:$color-grey-2);
+    @include flex-container($align-items:center);
+    border-radius: 10px;
+    padding:15px;
+    background-color: $color-white;
+    margin-bottom:20px;
+
+    &__icon {
+        font-size: 20px;
+        height:20px;
+        width:20px;
+        color: $color-grey-2;
+    }
+
+  input {
+    border: none;
+    outline: none;
+    margin-left: 12px;
+    flex-grow: 1;
+    @include font($font-size: 14, $font-style: normal, $font-weight: $regular, $font-color:$color-black, $font-family: DM-Sans);
+    @include text-properties-common($line-height: 20px, $letter-spacing: 0.2px);
+
+    &::placeholder {
+        color:$color-grey-2;
+    }
+  }
+}
