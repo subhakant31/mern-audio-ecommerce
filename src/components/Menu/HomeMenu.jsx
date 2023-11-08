@@ -7,17 +7,17 @@ function HomeMenu() {
     <header>
       <div className="menu">
         <a href="" className="menu__filter">
-          <img src="./asserts/icons/hambeger.svg" alt="filter icon" />
+          <img src="./assets/images/icons/hambeger.svgpublic" alt="filter icon" />
         </a>
 
         <a href="" className="menu__brand">
-          <img src="./asserts/icons/logo.svg" alt="brand logo" />
+          <img src="./assets/images/icons/logo.svg" alt="brand logo" />
           <h3 className="menu__brand__name">audio</h3>
         </a>
 
         <a href="" className="menu__profile">
           <img
-            src="./asserts/images/profilepicture.svg"
+            src="./assets/images/userImage.png"
             alt="profile picture"
           />
         </a>
