@@ -21,8 +21,8 @@ function ProductDescriptionPage(props) {
         <nav className="product-description__contents__nav">
           <ul className="list">
             <li className="list__item">
-              <a
-                href="#"
+              <button
+                href="/"
                 onClick={(e) => {
                   e.preventDefault();
                   setActive("overview");
@@ -30,11 +30,11 @@ function ProductDescriptionPage(props) {
                 className={selectedNavItem === "overview" ? "active" : ""}
               >
                 overview
-              </a>
+              </button>
             </li>
             <li className="list__item">
-              <a
-                href="#"
+              <button
+                href="/"
                 onClick={(e) => {
                   e.preventDefault();
                   setActive("features");
@@ -42,11 +42,11 @@ function ProductDescriptionPage(props) {
                 className={selectedNavItem === "features" ? "active" : ""}
               >
                 features
-              </a>
+              </button>
             </li>
             <li className="list__item">
-              <a
-                href="#"
+              <button
+                href="/"
                 onClick={(e) => {
                   e.preventDefault();
                   setActive("specification");
@@ -54,14 +54,20 @@ function ProductDescriptionPage(props) {
                 className={selectedNavItem === "specification" ? "active" : ""}
               >
                 specification
-              </a>
+              </button>
             </li>
           </ul>
         </nav>
 
-        {selectedNavItem === "overview" ? <ProductOverview /> : <></>}
-        {selectedNavItem === "features" ? <ProductFeatures /> : <></>}
-        {selectedNavItem === "specification" ? <ProductSpecification /> : <></>}
+        {selectedNavItem === "overview" ? (
+          <ProductOverview />
+        ) : selectedNavItem === "features" ? (
+          <ProductFeatures />
+        ) : selectedNavItem === "specification" ? (
+          <ProductSpecification />
+        ) : (
+          <></>
+        )}
       </div>
 
       <ProductActionButton buttonText="add to cart"></ProductActionButton>
