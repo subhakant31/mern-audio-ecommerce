@@ -1,16 +1,16 @@
 import React from "react";
-import "./CartItem.scss";
-function CartItem() {
+import "./ProductItem.scss";
+function ProductItem() {
   return (
-    <div className="cartcontainer">
-      <a href="">
+    <div className="product-deatils">
+      <a href="" className="product-deatils__image">
         <img
           src="./assets/images/productImages/productimage1.png"
           alt="headset"
         />
       </a>
 
-      <div className="cartcontainer__details">
+      <div className="product-deatils__data">
         <h3>TMA-2 HD Wireless</h3>
         <h4>USD 350</h4>
       </div>
@@ -18,4 +18,4 @@ function CartItem() {
   );
 }
 
-export default CartItem;
+export default ProductItem;

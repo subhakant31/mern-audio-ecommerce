@@ -1,13 +1,15 @@
 import React from "react";
-import CartQuantity from "../../components/Cart/CartQuantity/CartControl";
-import CartItem from "../../components/Cart/CartBag/CartItem";
 import "./AddToCartPage.scss";
-
+import ProductItem from "../../components/ShoppingProduct/ProductItem/ProductItem";
+import Cartcontrol from '../../components/ShoppingProduct/CartQuantity/CartControl'
 function AddToCartPage() {
   return (
-    <>
-      <CartItem></CartItem>
-      <CartQuantity></CartQuantity>
-    </>
+    
+      <div className="cartcontianer">
+       <ProductItem></ProductItem>
+       <Cartcontrol></Cartcontrol>
+      </div>
   );
 }
+
+export default AddToCartPage;
