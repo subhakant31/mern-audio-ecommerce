@@ -7,7 +7,7 @@ function ProfileData() {
       <div className="profile">
         <div className="profile__image">
           <img
-            src="./asserts/images/profilepicture.svg"
+            src="./assets/images/userImage.png"
             alt="profile picture"
             className="profile-picture"
           />
