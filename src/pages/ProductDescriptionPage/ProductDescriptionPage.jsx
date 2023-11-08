@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import ProductOverview from "../../components/ProductDetails/ProductOverview/ProductOverview";
 import ProductFeatures from "../../components/ProductDetails/ProductFeatures/ProductFeatures";
 import ProductSpecification from "../../components/ProductDetails/ProductSpecification/ProductSpecification";
+import ProductActionButton from "../../components/ProductDetails/ProductActionButton/ProductActionButton";
 function ProductDescriptionPage(props) {
   const [selectedNavItem, setSelectedNavItem] = useState("overview");
 
@@ -62,10 +63,8 @@ function ProductDescriptionPage(props) {
         {selectedNavItem === "features" ? <ProductFeatures /> : <></>}
         {selectedNavItem === "specification" ? <ProductSpecification /> : <></>}
       </div>
-      
-      <button className="product-description__add-to-cart-btn">
-        add to cart
-      </button>
+
+      <ProductActionButton buttonText="add to cart"></ProductActionButton>
     </div>
   );
 }
