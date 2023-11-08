@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import ProductOverview from "../../components/ProductDetails/ProductOverview/ProductOverview";
 import ProductFeatures from "../../components/ProductDetails/ProductFeatures/ProductFeatures";
 import ProductSpecification from "../../components/ProductDetails/ProductSpecification/ProductSpecification";
+import ProductActionButton from "../../components/ProductDetails/ProductActionButton/ProductActionButton";
 function ProductDescriptionPage(props) {
   const [selectedNavItem, setSelectedNavItem] = useState("overview");
 
@@ -20,8 +21,8 @@ function ProductDescriptionPage(props) {
         <nav className="product-description__contents__nav">
           <ul className="list">
             <li className="list__item">
-              <a
-                href="#"
+              <button
+                href="/"
                 onClick={(e) => {
                   e.preventDefault();
                   setActive("overview");
@@ -29,11 +30,11 @@ function ProductDescriptionPage(props) {
                 className={selectedNavItem === "overview" ? "active" : ""}
               >
                 overview
-              </a>
+              </button>
             </li>
             <li className="list__item">
-              <a
-                href="#"
+              <button
+                href="/"
                 onClick={(e) => {
                   e.preventDefault();
                   setActive("features");
@@ -41,11 +42,11 @@ function ProductDescriptionPage(props) {
                 className={selectedNavItem === "features" ? "active" : ""}
               >
                 features
-              </a>
+              </button>
             </li>
             <li className="list__item">
-              <a
-                href="#"
+              <button
+                href="/"
                 onClick={(e) => {
                   e.preventDefault();
                   setActive("specification");
@@ -53,19 +54,23 @@ function ProductDescriptionPage(props) {
                 className={selectedNavItem === "specification" ? "active" : ""}
               >
                 specification
-              </a>
+              </button>
             </li>
           </ul>
         </nav>
 
-        {selectedNavItem === "overview" ? <ProductOverview /> : <></>}
-        {selectedNavItem === "features" ? <ProductFeatures /> : <></>}
-        {selectedNavItem === "specification" ? <ProductSpecification /> : <></>}
+        {selectedNavItem === "overview" ? (
+          <ProductOverview />
+        ) : selectedNavItem === "features" ? (
+          <ProductFeatures />
+        ) : selectedNavItem === "specification" ? (
+          <ProductSpecification />
+        ) : (
+          <></>
+        )}
       </div>
-      
-      <button className="product-description__add-to-cart-btn">
-        add to cart
-      </button>
+
+      <ProductActionButton buttonText="add to cart"></ProductActionButton>
     </div>
   );
 }

@@ -4,8 +4,6 @@
 @import "../../styles/partials/variable";
 
 .product-description {
-  width: 90%;
-  margin: auto;
   margin-top: 18px;
   &__price {
     font-family: DM-Sans;
@@ -14,6 +12,7 @@
     line-height: 1.25rem;
     letter-spacing: 0.0125rem;
     color: $color-green;
+    margin-left: 25px;
   }
   &__title {
     font-family: Montserrat;
@@ -24,16 +23,18 @@
     color: $color-black;
     text-transform: uppercase;
     padding-top: 6px;
+    margin-left: 25px;
   }
 
   &__contents {
     &__nav {
+      margin-left: 25px;
       .list {
         display: flex;
         margin-top: 29px;
         &__item {
           padding-right: 34px;
-          a {
+          button {
             font-family: DM-Sans;
             font-size: $medium;
             font-weight: $regular;
@@ -41,6 +42,8 @@
             letter-spacing: 0.0125rem;
             text-transform: capitalize;
             text-align: center;
+            background-color: transparent;
+            border: none;
           }
           .active {
             &:after {
@@ -64,21 +67,5 @@
         }
       }
     }
-  }
-  &__add-to-cart-btn {
-    padding: 15px 0;
-    width: 100%;
-    border-radius: 10px;
-    background-color: $color-green;
-    color: $color-white;
-    margin-top: 27px;
-    margin-bottom: 30px;
-    text-transform: capitalize;
-    border: none;
-    font-family: DM-Sans;
-    font-size: $medium;
-    font-weight: $bold;
-    line-height: 1.25rem;
-    letter-spacing: 0.0125rem;
   }
 }

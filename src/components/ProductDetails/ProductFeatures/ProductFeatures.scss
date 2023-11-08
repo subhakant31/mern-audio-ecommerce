@@ -2,7 +2,8 @@
 @import "../../../styles/partials/variable";
 
 .product-features {
-  margin-top: 30px;
+  width: 90%;
+  margin: 30px auto auto auto;
   &__title {
     font-family: DM-Sans;
     font-size: $medium;
@@ -19,5 +20,4 @@
     letter-spacing: 0.0125rem;
     margin-top: 13px;
   }
-  
 }
