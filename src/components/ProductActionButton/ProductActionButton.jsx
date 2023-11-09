@@ -2,11 +2,12 @@ import "./ProductActionButton.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FontAwesomeIconProps } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+
 function ProductActionButton(props) {
-  const buttonText = props.buttonText;
-  const ariaLabelText = props.ariaLabelText;
-  const title = props.title;
-  const arrowRight = false;
+  const buttonText = props.buttonText; //text inside the button
+  const ariaLabelText = props.ariaLabelText; //aria label of the button
+  const title = props.title; //title of the button
+  
   return (
     <div className="product-action-button-wrapper">
       <a
