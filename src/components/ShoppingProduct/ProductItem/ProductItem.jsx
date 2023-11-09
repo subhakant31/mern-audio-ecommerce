@@ -15,8 +15,8 @@ function ProductItem() {
 
       <div className="product-bag-details__data">
         <div className="product-bag-details__data__title">
-          <h3>TMA-2 HD Wireless</h3>
-          <h4>USD 350</h4>
+          <span className="product-bag-name">TMA-2 HD Wireless</span>
+          <span className="product-bag-cost">USD 350</span>
         </div> 
         <div className="product-bag-details__data__controls">
           <CartControl></CartControl>

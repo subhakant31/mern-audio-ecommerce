@@ -7,7 +7,7 @@
   &__minus , &__plus {
     border-radius: 10px;
     border: 1px solid $color-grey-2;
-    background: var(--colors-white, #fff);
+    background: $color-white;
     display: flex;
     width: 30px;
     height: 30px;
@@ -19,8 +19,7 @@
       height: 20px;
     }
   }
-  &__minus,
-  p {
-    margin-right: 25px;
+  .controls__number{
+    margin:0 25px;
   }
 }

@@ -5,13 +5,13 @@ function CheckOut() {
   return (
     <>
     <div className="total-cart-items">
-        <p className="total-cart-items__count">total <span>3</span> items</p>
-        <p className="total-cart-items__cost">usd 200</p>
+        <span className="total-cart-items__count">total <span>3</span> items</span>
+        <span className="total-cart-items__cost">usd 200</span>
     </div>
      <div className="check-out">
-      <button type="submit" className="check-out__button">
+      <a href="" type="submit" className="check-out__button">
         proceed to checkout
-      </button>
+      </a>
 
       <a href="" className="check-out__proceed-icon">
         <img src="./assets/images/icons/forwardarrow.svg" alt="proceed icon" />

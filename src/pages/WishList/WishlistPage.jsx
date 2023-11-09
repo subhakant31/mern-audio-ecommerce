@@ -1,7 +1,7 @@
 import React from "react";
 import "./WishlistPage.scss";
 import ProductItem from "../../components/ShoppingProduct/ProductItem/ProductItem";
-import Addtobag from '../../components/AddtoBag/AddtoBagButton'
+import Addtobag from '../../components/AddtoCart/AddtoBagButton'
 function WishlistPage() {
   // const Productcard = ({ ProductItem, isWishlistPage }) => {
  
