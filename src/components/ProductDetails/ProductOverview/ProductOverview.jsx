@@ -3,8 +3,9 @@ import ProductImage from "../ProductImage/ProductImage";
 import ReviewCard from "./ReviewCard/ReviewCard";
 import SuggestedProductCard from "./SuggestedProductCard/SuggestedProductCard";
 function ProductOverview(props) {
+  const productId = props.id;
   return (
-    <div className="product-overview">
+    <div className="product-overview" id={productId}>
       <ul className="product-overview__images-container">
         <ProductImage
           image={`./assets/images/productImages/productimage1.png`}
