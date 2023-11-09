@@ -1,0 +1,38 @@
+@import '../../styles/partials/variable';
+@import '../../styles/partials/mixins';
+
+.filter {
+    @include flex-container($justify-content:space-between);
+    margin-left: 24px;
+    &__btn {
+        @include border-property($width:1px, $style:solid, $color:$color-grey-2);
+        border-radius: 10px;
+        @include flex-container($align-items:center);
+        @include font($font-size: 14, $font-style: normal, $font-weight: $regular, $font-color:$color-black, $font-family: DM-Sans);
+        gap:8px;
+        padding: 10px 15px;
+        letter-spacing: 0.2px;
+        margin-right: 18px;
+
+        img {
+            width:20px;
+            height:20px;
+        }
+    }
+    &__list {
+        @include flex-container($align-items:center);
+        white-space: nowrap;
+        overflow-x: scroll;
+
+        &__item {
+            margin-right: 25px;
+            @include font($font-size: 14, $font-style: normal, $font-weight: $regular, $font-color:$color-black, $font-family: DM-Sans);
+            line-height: 20px; 
+            letter-spacing: 0.2px;
+        }
+    }
+
+    &__list::-webkit-scrollbar {
+        display:none;
+    }
+}

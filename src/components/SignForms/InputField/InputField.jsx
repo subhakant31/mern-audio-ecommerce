@@ -12,7 +12,7 @@ function InputField(props){
 
     return(
         <div className='form__input' tabIndex="0">
-          <label for ={forValue}></label>
+          <label aria-hidden='true' for ={forValue}></label>
           <FontAwesomeIcon className='form__input__icon' icon={icon} />
           <input type={type} id={id} name={nameValue} placeholder={placeholder} title={title}></input>
         </div>

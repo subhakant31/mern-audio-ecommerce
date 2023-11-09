@@ -6,7 +6,8 @@
     @include border-property($width:1px, $style:solid, $color:$color-grey-2);
     @include flex-container($align-items:center);
     border-radius: 10px;
-    padding:15px;
+    padding:0 15px;
+    height:50px;
     background-color: $color-white;
     margin-bottom:20px;
 

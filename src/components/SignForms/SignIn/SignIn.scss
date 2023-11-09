@@ -3,10 +3,7 @@
 @import '../../../styles/partials/mixins';
 
 .form {
-    padding-top:250px;
-    width:90%;
-    margin:auto;
-    padding-bottom: 100px;
+    padding:250px 24px 90px 25px;
 
     &__forgot {
         @include font($font-size: 14, $font-style: normal, $font-weight: $regular, $font-color: $color-white, $font-family: DM-Sans);
@@ -27,7 +24,6 @@
         &__redirect {
             color: $color-green;
             text-decoration: underline;
-            margin-left: 2px;
         }
     }
 }
