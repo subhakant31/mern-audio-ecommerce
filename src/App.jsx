@@ -5,6 +5,7 @@ import Homemenubar from "./components/Menu/HomeMenu";
 import ProfilePage from "./pages/ProfilePage/ProfilePage";
 import CartPage from "./pages/AddToCartPage/AddToCartPage"; 
 import WishlistPage from "./pages/WishList/WishlistPage";
+import HomePage from "./pages/HomePage/HomePage"
 import "./App.scss";
 
 function App(props) {
@@ -15,4 +16,5 @@ function App(props) {
       <WishlistPage></WishlistPage>
     </React.Fragment>
   );
+  }
 export default App;
