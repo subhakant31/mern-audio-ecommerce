@@ -1,6 +1,7 @@
 import "./ProductOverview.scss";
 import ProductImage from "../ProductImage/ProductImage";
 import ReviewCard from "./ReviewCard/ReviewCard";
+import MoreProducts from "../../MoreProducts/MoreProducts";
 import SuggestedProductCard from "./SuggestedProductCard/SuggestedProductCard";
 function ProductOverview(props) {
   const productId = props.id;
@@ -25,22 +26,16 @@ function ProductOverview(props) {
           <ReviewCard></ReviewCard>
           <ReviewCard></ReviewCard>
           <ReviewCard></ReviewCard>
-          <ReviewCard></ReviewCard>
-          <ReviewCard></ReviewCard>
         </ul>
+        <a
+          href="/"
+          aria-label="show more reviews"
+          className="product-overview__user-reviews__see-more-reviews-btn"
+        >
+          See All Reviews
+        </a>
       </div>
-      <div className="product-overview__more-products">
-        <div className="product-overview__more-products__heading-container">
-          <h3 className="heading">another product</h3>
-          <a href="#">see all</a>
-        </div>
-        <ul className="product-overview__more-products__more-product-list">
-          <SuggestedProductCard></SuggestedProductCard>
-          <SuggestedProductCard></SuggestedProductCard>
-          <SuggestedProductCard></SuggestedProductCard>
-          <SuggestedProductCard></SuggestedProductCard>
-        </ul>
-      </div>
+      <MoreProducts heading="more products"></MoreProducts>
     </div>
   );
 }
