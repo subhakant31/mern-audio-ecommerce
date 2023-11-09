@@ -2,16 +2,17 @@
 @import "../../../styles/partials/variable";
 
 .product-overview {
-  width: 100%;
   margin-top: 29px;
 
   &__images-container {
+    margin-left: 20px;
     display: flex;
     overflow: scroll;
   }
   &__user-reviews {
     margin-top: 40px;
     &__heading {
+      margin-left: 25px;
       font-family: DM-Sans;
       font-size: $medium;
       font-weight: $regular;
@@ -22,14 +23,29 @@
     &__container {
       margin-top: 29px;
     }
+
+    &__see-more-reviews-btn {
+      display: block;
+      margin-top: 40px;
+      font-family: DM-Sans;
+      font-size: $small;
+      font-weight: $regular;
+      line-height: 1.25rem;
+      letter-spacing: 0.0125rem;
+      text-align: center;
+      color: $color-grey-3;
+    }
   }
 
   &__more-products {
     background-color: $color-grey;
     margin-top: 33px;
+    padding-top: 28px;
     &__heading-container {
       display: flex;
       justify-content: space-between;
+      padding-left: 25px;
+      padding-right: 24px;
       .heading {
         font-family: DM-Sans;
         font-size: $medium;
@@ -49,7 +65,8 @@
       }
     }
     &__more-product-list {
-      padding-top: 20px;
+      margin-top: 20px;
+      margin-left: 25px;
       padding-bottom: 38px;
       display: flex;
       overflow-x: scroll;

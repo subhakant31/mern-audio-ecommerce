@@ -2,6 +2,7 @@
 @import "../../../styles/partials/variable";
 
 .product-features {
+  padding: 0 24px 0 25px;
   margin-top: 30px;
   &__title {
     font-family: DM-Sans;
@@ -19,5 +20,4 @@
     letter-spacing: 0.0125rem;
     margin-top: 13px;
   }
-  
 }

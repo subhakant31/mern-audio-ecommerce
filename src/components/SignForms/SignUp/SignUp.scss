@@ -1,9 +1,8 @@
 @import '../../../styles/partials/variable';
-@import '../../../styles/partials/font';
 @import '../../../styles/partials/mixins';
 
 .form {
-  padding:250px 24px 90px 25px;
+  padding:250px 0 90px 0;
 
     &__list {
       @include flex-container($justify-content:center);

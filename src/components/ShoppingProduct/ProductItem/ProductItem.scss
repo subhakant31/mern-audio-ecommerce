@@ -1,0 +1,61 @@
+@import "../../../styles/index.scss";
+
+.product-bag-details {
+  @include flex-container(
+    $direction: null,
+    $justify-content: null,
+    $align-items: center,
+    $flex-wrap: nowrap
+  );
+ 
+
+  &__image {
+    width: 87px;
+    height: 87px;
+    padding: 10px;
+    flex-shrink: 0;
+    background-color: $color-grey;
+    border-radius: 15px;
+    margin-right: 15px;
+    img {
+      width: 67px;
+      height: 67px;
+    }
+  }
+  &__data {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    letter-spacing: 0.2px;
+   
+
+    &__title {
+      margin-bottom: 13px;
+      h3 {
+        @include font(
+          $font-family: DM-Sans,
+          $font-color: #000,
+          $font-size: 16,
+          $font-weight: 400,
+          $font-style: null
+        );
+        margin-bottom: 5px;
+      }
+      h4 {
+        @include font(
+          $font-family: DM-Sans,
+          $font-color: #000,
+          $font-size: 14,
+          $font-weight: 700,
+          $font-style: null
+        );
+      }
+    }
+    &__controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      align-self: stretch;
+    }
+  }
+}

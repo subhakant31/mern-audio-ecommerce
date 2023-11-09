@@ -1,9 +1,11 @@
-import "./ProductDescriptionPage.scss";
 import React, { useState } from "react";
+import "./ProductDescriptionPage.scss";
 import ProductOverview from "../../components/ProductDetails/ProductOverview/ProductOverview";
 import ProductFeatures from "../../components/ProductDetails/ProductFeatures/ProductFeatures";
 import ProductSpecification from "../../components/ProductDetails/ProductSpecification/ProductSpecification";
-function ProductDescriptionPage(props) {
+import ProductActionButton from "../../components/ProductActionButton/ProductActionButton";
+
+function ProductDescriptionPage() {
   const [selectedNavItem, setSelectedNavItem] = useState("overview");
 
   const setActive = (navItem) => {
@@ -14,58 +16,69 @@ function ProductDescriptionPage(props) {
     <div className="product-description">
       <span className="product-description__price">USD 350</span>
       <h2 className="product-description__title">
-        tma-2 <br></br> hd wireless
+        tma-2 <br /> hd wireless
       </h2>
       <div className="product-description__contents">
-        <nav className="product-description__contents__nav">
+        <nav
+          className="product-description__contents__nav"
+          role="navigation"
+          aria-label="Product Details Navigation"
+        >
           <ul className="list">
             <li className="list__item">
-              <a
-                href="#"
-                onClick={(e) => {
-                  e.preventDefault();
-                  setActive("overview");
-                }}
+              <button
+                id="tab-1"
+                type="button"
+                role="tab"
+                aria-selected={selectedNavItem === "overview"}
+                aria-controls="tabpanel-1"
+                onClick={() => setActive("overview")}
                 className={selectedNavItem === "overview" ? "active" : ""}
               >
                 overview
-              </a>
+              </button>
             </li>
             <li className="list__item">
-              <a
-                href="#"
-                onClick={(e) => {
-                  e.preventDefault();
-                  setActive("features");
-                }}
+              <button
+                id="tab-2"
+                type="button"
+                role="tab"
+                aria-selected={selectedNavItem === "features"}
+                aria-controls="tabpanel-2"
+                onClick={() => setActive("features")}
                 className={selectedNavItem === "features" ? "active" : ""}
               >
                 features
-              </a>
+              </button>
             </li>
             <li className="list__item">
-              <a
-                href="#"
-                onClick={(e) => {
-                  e.preventDefault();
-                  setActive("specification");
-                }}
+              <button
+                id="tab-3"
+                type="button"
+                role="tab"
+                aria-selected={selectedNavItem === "specification"}
+                aria-controls="tabpanel-3"
+                onClick={() => setActive("specification")}
                 className={selectedNavItem === "specification" ? "active" : ""}
               >
                 specification
-              </a>
+              </button>
             </li>
           </ul>
         </nav>
 
-        {selectedNavItem === "overview" ? <ProductOverview /> : <></>}
-        {selectedNavItem === "features" ? <ProductFeatures /> : <></>}
-        {selectedNavItem === "specification" ? <ProductSpecification /> : <></>}
+        {selectedNavItem === "overview" && <ProductOverview id="tabpanel-1" />}
+        {selectedNavItem === "features" && <ProductFeatures id="tabpanel-2" />}
+        {selectedNavItem === "specification" && (
+          <ProductSpecification id="tabpanel-3" />
+        )}
       </div>
-      
-      <button className="product-description__add-to-cart-btn">
-        add to cart
-      </button>
+
+      <ProductActionButton
+        title="add to cart"
+        ariaLabelText="add this item to cart"
+        buttonText="add to cart"
+      />
     </div>
   );
 }
