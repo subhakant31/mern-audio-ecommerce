@@ -1,18 +1,14 @@
-import ProductCategory from '../../components/ProductCategory/ProductCategory'
 import "./HomePage.scss";
-import '../../components/ProductDetails/ProductOverview/ProductOverview.scss';
+import HomeMenu from '../../components/Menu/HomeMenu';
 import SearchComponent from '../../components/SearchComponent/SearchComponent';
+import ProductCategory from '../../components/ProductCategory/ProductCategory'
+import SuggestedProductCard from '../../components/ProductDetails/ProductOverview/SuggestedProductCard/SuggestedProductCard';
 
 export default function HomePage () {
     return (
-        <section className="home-page">
-
-            <div className='forDesignPurposeOnly'>Logo</div>
-
-            {/* The Two element named "forDesignPurposeOnly" and "forDesignPurposeOnly2" are dummy component for design purpose only
-                both are assigned to other people in team. Beacuse their code have some issue i didn't integrate them in home page.
-                their CSS code is defined in HomePage.scss , So, plz don't onsoider while reviewing
-            */}
+        <section className="home-page">            
+	        <HomeMenu />
+       
             <div className="hero-text">
                 <h2>Hi, Andrea</h2>
                 <span>What are you looking for today?</span>
@@ -21,28 +17,17 @@ export default function HomePage () {
             <main className='home-page__main'>
                 <ProductCategory/>
 
-                <div className='forDesignPurposeOnly2'>
-                    <div className="fdp2-heading">
-                        <h3>Featiure products</h3>
-                        <span>See All</span>
-                    </div>
-                    <div className="fd2-product">
-                        <div className="fd2-product-item">
-                            <img src="assets/images/productImages/suggestedProductImage1.png" alt="" />
-                            <span className="name">TMA WIRELESS</span>
-                            <span className="price">USD350</span>
-                        </div>
-                        <div className="fd2-product-item">
-                            <img src="assets/images/productImages/suggestedProductImage1.png" alt="" />
-                            <span className="name">TMA WIRELESS</span>
-                            <span className="price">USD350</span>
-                        </div>
-                        <div className="fd2-product-item">
-                            <img src="assets/images/productImages/suggestedProductImage1.png" alt="" />
-                            <span className="name">TMA WIRELESS</span>
-                            <span className="price">USD350</span>
-                        </div>
-                    </div>
+                <div className="product-overview__more-products">
+                  <div className="product-overview__more-products__heading-container">
+                        <h3 className="heading">another product</h3>
+                        <a href="#">see all</a>
+                   </div>
+                    <ul className="product-overview__more-products__more-product-list">
+                        <SuggestedProductCard></SuggestedProductCard>
+                        <SuggestedProductCard></SuggestedProductCard>
+                        <SuggestedProductCard></SuggestedProductCard>
+                        <SuggestedProductCard></SuggestedProductCard>
+                    </ul>
                 </div>
             
             </main>
