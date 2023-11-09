@@ -23,6 +23,18 @@
     &__container {
       margin-top: 29px;
     }
+
+    &__see-more-reviews-btn {
+      display: block;
+      margin-top: 40px;
+      font-family: DM-Sans;
+      font-size: $small;
+      font-weight: $regular;
+      line-height: 1.25rem;
+      letter-spacing: 0.0125rem;
+      text-align: center;
+      color: $color-grey-3;
+    }
   }
 
   &__more-products {
