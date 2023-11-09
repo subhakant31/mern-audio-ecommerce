@@ -1,0 +1,66 @@
+@import "../../styles/index.scss";
+
+.total-cart-items {
+  display: flex;
+  padding:0 25px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px 0;
+  &__count {
+    @include font(
+      $font-family: DM-Sans,
+      $font-color: $color-black,
+      $font-size: 12,
+      $font-weight: $bold,
+      $font-style: normal
+    );
+    letter-spacing: 0.2px;
+    line-height: 20px;
+    opacity: 0.6;
+    text-transform: capitalize;
+  }
+  &__cost {
+    @include font(
+      $font-family: DM-Sans,
+      $font-color: $color-black,
+      $font-size: 16,
+      $font-weight: $bold,
+      $font-style: normal
+    );
+    letter-spacing: 0.2px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+}
+.check-out {
+  @include flex-container(
+    $direction: null,
+    $justify-content: space-between,
+    $align-items: center,
+    $flex-wrap: nowrap
+  );
+  width: 326px;
+  height: 50px;
+  padding: 20px 30px;
+  margin: auto;
+  border-radius: 10px;
+  background: $color-green;
+  &__button {
+    @include font(
+      $font-family: DM-Sans,
+      $font-color: $color-white,
+      $font-size: 14,
+      $font-weight: $bold,
+      $font-style: normal
+    );
+    border: none;
+    background-color: $color-green;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    text-transform: capitalize;
+  }
+  &__proceed-icon {
+    width: 25px;
+    height: 25px;
+  }
+}
