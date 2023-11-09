@@ -4,6 +4,8 @@ import SearchComponent from '../../components/SearchComponent/SearchComponent';
 import ProductCategory from '../../components/ProductCategory/ProductCategory'
 import SuggestedProductCard from '../../components/ProductDetails/ProductOverview/SuggestedProductCard/SuggestedProductCard';
 
+import '../../components/ProductDetails/ProductOverview/ProductOverview.scss';
+
 export default function HomePage () {
     return (
         <section className="home-page">            
