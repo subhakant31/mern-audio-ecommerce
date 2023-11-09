@@ -1,14 +1,14 @@
 @import '../../styles/partials/variable';
 @import '../../styles/partials/mixins';
 
-.heading {
-    padding-top:150px;
+.page__heading {
+    padding-top:111px;
     text-align: center;
 
     &__main {
         @include font($font-size:51.048, $font-color:$color-white, $font-weight: $bold, $font-family: DM-Sans);
         @include text-properties-common($letter-spacing:0.638px);
-        margin-bottom: 10px;
+        margin-bottom: 7px;
     }
 
     &__sub-text {

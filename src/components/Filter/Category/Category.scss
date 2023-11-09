@@ -18,7 +18,7 @@
   }
 
   &__list {
-    @include flex-container($align-items: center);
+    @include flex-container($align-items: center, $flex-wrap: wrap);
 
     &__wrapper {
       margin-right: 0.625rem;
