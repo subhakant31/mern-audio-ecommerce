@@ -1,7 +1,7 @@
 import "./SignUp.scss";
 import { faEnvelope, faLock } from "@fortawesome/free-solid-svg-icons";
 import InputField from "../InputField/InputField";
-import Button from "../Button/Button";
+import ProductActionButton from "../../ProductActionButton/ProductActionButton";
 
 function SignUp() {
     return (
@@ -14,6 +14,9 @@ function SignUp() {
                 type="email"
                 title="Email"
                 icon={faEnvelope}
+                ariarequired="true"
+                arialabel="Email"
+              
             />
             <InputField
                 for="password"
@@ -23,40 +26,35 @@ function SignUp() {
                 type="password"
                 title="Password"
                 icon={faLock}
+                arialabel="Password"
+                ariarequired="true"
             />
-            <Button
-                for="submit"
-                type="submit"
-                id="submit"
-                name="submit"
-                value="Sign Up"
-            />
+            <ProductActionButton buttonText="Sign Up" aria-label="Sign Up" title="Sign Up"/>
             <ul className="form__list">
-                <li className="form__list__listitem"><a href="#">
+                <li className="form__list__listitem"><a href="#" aria-label="Appstore" title="Appstore">
                     <img
                         className="item"
                         src='./assets/images/apple.svg'
                         alt="apple logo"
-                    ></img></a>
+                    /></a>
                 </li>
-                <li className="form__list__listitem"><a href="#">
+                <li className="form__list__listitem"><a href="#" aria-label="facebook" title="facebook">
                     <img
                         className="item"
                         src='./assets/images/facebook-f.svg'
                         alt="facebook logo"
-                    ></img></a>
+                    /></a>
                 </li>
-                <li className="form__list__listitem"><a href="#">
+                <li className="form__list__listitem"><a href="#" aria-label="playstore" title="playstore">
                     <img
                         className="item"
                         src='./assets/images/google.svg'
                         alt="google logo"
-                    ></img></a>
+                    /></a>
                 </li>
             </ul>
             <p className="form__account">
-                If you have an account?
-                <a href="#" className="form__account__redirect">
+                If you have an account? <a href="#" aria-label="Sign In Here" title="Sign In Here" className="form__account__redirect">
                      Sign In here
                 </a>
             </p>

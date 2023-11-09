@@ -1,22 +1,13 @@
 @import '../../../styles/partials/variable';
-@import '../../../styles/partials/font';
 @import '../../../styles/partials/mixins';
 
 .form {
-    padding-top:250px;
-    width:90%;
-    margin:auto;
-    padding-bottom: 100px;
+    padding:250px 0 90px 0;
 
     &__forgot {
         @include font($font-size: 14, $font-style: normal, $font-weight: $regular, $font-color: $color-white, $font-family: DM-Sans);
         @include text-properties-common($line-height: 20px, $letter-spacing: 0.2px);
-        margin:auto;
-        margin-bottom: 32px;
-        display: block;
-        background-color: transparent;
-        border: none; 
-        cursor: pointer;
+        @include flex-container($justify-content:center);
     }
 
     &__account {
@@ -27,7 +18,6 @@
         &__redirect {
             color: $color-green;
             text-decoration: underline;
-            margin-left: 2px;
         }
     }
 }

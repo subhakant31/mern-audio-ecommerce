@@ -9,12 +9,15 @@ function InputField(props){
     let placeholder = props.placeholder;
     let icon = props.icon;
     let title = props.title;
+    let arialabel = props.arialabel;
+    let required= props.ariarequired;
+    let autocomplete = props.autocomplete;
 
     return(
         <div className='form__input' tabIndex="0">
-          <label for ={forValue}></label>
+          <label aria-hidden='true' for ={forValue}></label>
           <FontAwesomeIcon className='form__input__icon' icon={icon} />
-          <input type={type} id={id} name={nameValue} placeholder={placeholder} title={title}></input>
+          <input type={type} id={id} name={nameValue} placeholder={placeholder} title={title} aria-label={arialabel} aria-required={required} auto-complete={autocomplete} required></input>
         </div>
     )
 } 
