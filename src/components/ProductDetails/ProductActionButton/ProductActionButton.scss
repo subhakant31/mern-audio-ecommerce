@@ -1,0 +1,26 @@
+@import "../../../styles/partials/variable";
+@import "../../../styles/partials/font";
+
+.product-action-button-wrapper {
+  width: 100%;
+  max-width: 326px;
+  margin: 27px auto 30px auto;
+  &__button {
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 10px;
+    background-color: $color-green;
+    color: $color-white;
+
+    text-transform: capitalize;
+    border: none;
+    font-family: DM-Sans;
+    font-size: $medium;
+    font-weight: $bold;
+    line-height: 1.25rem;
+    letter-spacing: 0.0125rem;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
