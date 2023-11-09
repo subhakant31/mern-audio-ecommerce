@@ -7,7 +7,11 @@ import ProductDescriptionPage from "./pages/ProductDescriptionPage/ProductDescri
 import "./App.scss";
 
 function App(props) {
-  return <React.Fragment></React.Fragment>;
+  return (
+    <React.Fragment>
+      <ProductDescriptionPage></ProductDescriptionPage>
+    </React.Fragment>
+  );
 }
 
 export default App;
