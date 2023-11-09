@@ -14,7 +14,6 @@ function ProductFeatures(props) {
         <ProductComponent></ProductComponent>
         <ProductComponent></ProductComponent>
       </ul>
-
     </div>
   );
 }

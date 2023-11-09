@@ -15,6 +15,4 @@ function App(props) {
       <WishlistPage></WishlistPage>
     </React.Fragment>
   );
-}
-
 export default App;
