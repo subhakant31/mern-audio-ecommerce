@@ -1,14 +1,12 @@
 import React from "react";
 import "./AddToCartPage.scss";
+import CartProceed from "../../components/CheckOut/CheckOut";
 import ProductItem from "../../components/ShoppingProduct/ProductItem/ProductItem";
 function AddToCartPage() {
-  const Productcard= ({ isWishlistPage }) => {
-    const handleDelete = () => { 
-    };
-  }
   return (
     <div className="cartcontainer">
       <ProductItem></ProductItem>
+      <CartProceed></CartProceed>
     </div>
   );
 }

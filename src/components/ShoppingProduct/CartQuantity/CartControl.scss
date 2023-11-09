@@ -3,5 +3,24 @@
 .controls {
   display: flex;
   align-items: center;
-  gap: 25px;
+  justify-content: space-between;
+  &__minus , &__plus {
+    border-radius: 10px;
+    border: 1px solid $color-grey-2;
+    background: var(--colors-white, #fff);
+    display: flex;
+    width: 30px;
+    height: 30px;
+    padding: 10px 15px;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  &__minus,
+  p {
+    margin-right: 25px;
+  }
 }

@@ -2,5 +2,9 @@
 
 .cartcontainer {
     display: flex;
+    flex-direction: column;
     padding: 35px 25px;
+    .product-item-delete {
+        margin-left: 87px;
+    }
 }

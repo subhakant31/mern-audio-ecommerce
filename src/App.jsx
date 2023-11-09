@@ -12,7 +12,7 @@ function App(props) {
     <React.Fragment>
       <Homemenubar></Homemenubar> 
       <CartPage></CartPage>
-      <WishlistPage></WishlistPage> 
+      <WishlistPage></WishlistPage>
     </React.Fragment>
   );
 }

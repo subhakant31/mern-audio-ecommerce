@@ -1,2 +1,9 @@
 @import "../../../styles/index.scss";
 
+.product-item-delete {
+  img {
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+  }
+}

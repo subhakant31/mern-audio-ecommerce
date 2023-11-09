@@ -3,7 +3,7 @@ import "./ProductDelete.scss";
 
 function ProductDelete() {
   return (
-    <a href="">
+    <a href="" className="product-item-delete">
       <img src="./assets/images/icons/delete.svg " alt="delete" />
     </a>
   );
