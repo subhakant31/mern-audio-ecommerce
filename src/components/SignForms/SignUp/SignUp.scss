@@ -1,20 +1,18 @@
 @import '../../../styles/partials/variable';
-@import '../../../styles/partials/font';
 @import '../../../styles/partials/mixins';
 
 .form {
-    padding-top:250px;
-    width:90%;
-    margin:auto;
+  padding:250px 0 90px 0;
 
     &__list {
-        @include flex-container($justify-content: space-evenly);
-        margin-top : 42px;
+      @include flex-container($justify-content:center);
+      margin-top : 42px;
   
         &__listitem {
           width:52px;
           height:52px;
           border-radius: 10px;
+          margin-right:15px;
           background-color: $color-white;
           @include flex-container($justify-content:center, $align-items:center);
   
@@ -23,8 +21,14 @@
             width:20px;
             cursor: pointer;
           }
+        
+        }
+        &__listitem:last-child{
+          margin-right: 0px;
         }
       }
+
+     
     
 
     &__account {
@@ -35,7 +39,6 @@
         &__redirect {
             color: $color-green;
             text-decoration: underline;
-            margin-left: 2px;
         }
     }
 }
