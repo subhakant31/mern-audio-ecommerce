@@ -1,0 +1,108 @@
+@import "../../styles/partials/variable";
+@import "../../styles/partials/mixins";
+
+.home-page {    
+    max-width: 450px;
+    min-height: 100vh;
+    &__main {
+        background-color: $color-grey;
+        border-radius: 30px 30px 0 0 ;
+        height: 100%;
+        padding-top: 32px;
+    }
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px 0 24px;   //remove padding top
+    
+    
+    & h2 {
+        font-family: DM-Sans;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: .2px;
+        margin-bottom: 5px;
+    }
+    
+    & span {
+        font-family: DM-Sans;
+        display: block;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: 0.2px;
+    }
+}
+
+// @include flex-container($justify-content: null, $align-items: center) ;
+
+
+
+
+
+// Delete the below code------------
+.forDesignPurposeOnly {
+    height: 35px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding-top: 6px;
+    margin: 0px auto 29px auto;
+
+}
+
+.forDesignPurposeOnly2 {
+    // background-color: green;
+}
+
+.fdp2-heading {
+    font-family: DM-Sans;
+    display: flex;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+    letter-spacing: 0.2px;
+    padding: 0 22px 0 24px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    & span {
+        font-size: 14px;
+        color: $color-grey-2;
+    }
+}
+.fd2-product {
+    display: flex;
+    padding-left: 24px;
+    justify-content: flex-start;
+    overflow: scroll;
+    padding-bottom: 24px;
+}
+
+.fd2-product-item{
+    display: flex;
+    font-family: DM-Sans;;
+    font-size: 14px;
+    background-color: #fff;
+    width: 155px;
+    padding: 15px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 15px;
+    border-radius: 15px;
+
+ & img {
+    width: 125px;
+    height: 125px;
+ }
+
+ & .name {
+    margin-bottom: 4px;
+ }
+ & .price {
+    margin-bottom: 4px;
+ }
+}
