@@ -1,6 +1,6 @@
 import React from "react";
 import ProfileData from "../../components/Profile/ProfileData/ProfileData";
-import ProfileSettings from "../../components/Profile/ProfileSettings/ProfileEdit";
+import ProfileSettings from "../../components/Profile/ProfileSettings/ProfileSettingsEdit";
  
 
 function ProfilePage() {

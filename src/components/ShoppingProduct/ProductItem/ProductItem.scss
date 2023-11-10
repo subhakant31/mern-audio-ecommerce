@@ -1,12 +1,13 @@
 @import "../../../styles/partials/variable";
 @import "../../../styles/partials/mixins";
 
-.product-bag-details {
+.product-cart-details {
+  width: 100%;
   @include flex-container(
     $direction: null,
-    $justify-content: null,
-    $align-items: center,
-    $flex-wrap: nowrap
+    $justify-content: center,
+    $align-items: null,
+    $flex-wrap: null
   );
 
   &__image {
@@ -24,22 +25,22 @@
     }
   }
   &__data {
+    width: 100%;
     @include flex-container(
       $direction: column,
       $justify-content: space-between,
       $align-items: null,
-      $flex-wrap: nowrap
-    );
-    align-self: flex-start;
+      $flex-wrap: null
+    ); 
 
     &__title {
       @include flex-container(
         $direction: column,
         $justify-content: null,
         $align-items: null,
-        $flex-wrap: nowrap
+        $flex-wrap: null
       );
-      .product-bag-name {
+      .product-cart-name {
         @include font(
           $font-family: DM-Sans,
           $font-color: #000,
@@ -51,7 +52,7 @@
         line-height: 21px;
         letter-spacing: 0.2px;
       }
-      .product-bag-cost {
+      .product-cart-cost {
         @include font(
           $font-family: DM-Sans,
           $font-color: #000,
@@ -68,7 +69,7 @@
         $direction: null,
         $justify-content: space-between,
         $align-items: center,
-        $flex-wrap: nowrap
+        $flex-wrap: null
       );
     }
   }

@@ -4,19 +4,14 @@
 
 
 .wishlist-item-container {
-  // @include flex-container(
-  //   $direction: column,
-  //   $justify-content: space-between,
-  //   $align-items: center,
-  //   $flex-wrap: nowrap
-  // );
+  .product-cart-details__data{
+    display: flex;
+    flex-direction: row;
+  }
   padding: 35px 25px;
   .product-bag-details__data {
     flex-direction: row;
-  }
-  .product-item-delete {
-    margin-left: 60px;
-  }
+  } 
 
   .controls {
     display: none;

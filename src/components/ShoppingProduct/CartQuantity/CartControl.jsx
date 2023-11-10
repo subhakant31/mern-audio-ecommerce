@@ -4,17 +4,17 @@ import "./CartControl.scss";
 function CartControl() {
   return (
     <div className="controls">
-      <button className="controls__minus">
+      <a href="" className="controls__minus">
         <img
           src="./assets/images/icons/productminus.svg"
           alt="minus a product"
         />
-      </button>
+      </a>
       <span className="controls__number">1</span>
 
-      <button className="controls__plus">
+      <a href="" className="controls__plus">
         <img src="./assets/images/icons/productadd.svg " alt="add a product" />
-      </button>
+      </a>
     </div>
   );
 }
