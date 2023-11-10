@@ -1,9 +1,7 @@
 @import "../../styles/partials/variable";
 
-.product-action-button-wrapper {
-  width: 100%;
-  max-width: 326px;
-  margin: 27px auto 30px auto;
+.product-action-button-with-arrow-wrapper {
+  margin: 27px 24px 30px 25px;
   &__button {
     width: 100%;
     display: flex;

@@ -7,18 +7,18 @@ function ProductActionButtonWithArrow(props) {
   const ariaLabelText = props.ariaLabelText; //aria label of the button
   const title = props.title; //title of the button
   return (
-    <div className="product-action-button-wrapper">
+    <div className="product-action-button-with-arrow-wrapper">
       <a
         href="/"
         aria-label={ariaLabelText}
         title={title}
-        className="product-action-button-wrapper__button"
+        className="product-action-button-with-arrow-wrapper__button"
       >
-        <span className="product-action-button-wrapper__button__text">
+        <span className="product-action-button-with-arrow-wrapper__button__text">
           {buttonText}
         </span>
 
-        <span className="product-action-button-wrapper__button__icon">
+        <span className="product-action-button-with-arrow-wrapper__button__icon">
           <FontAwesomeIcon icon={faChevronRight} />
         </span>
       </a>
