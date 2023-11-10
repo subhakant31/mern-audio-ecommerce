@@ -1,4 +1,5 @@
-@import "../../../styles/index.scss";
+@import "../../../styles/partials/variable";
+@import "../../../styles/partials/mixins";
 
 .product-bag-details {
   @include flex-container(
@@ -23,14 +24,21 @@
     }
   }
   &__data {
-    display: flex;
-    flex-direction: column;
+    @include flex-container(
+      $direction: column,
+      $justify-content: space-between,
+      $align-items: null,
+      $flex-wrap: nowrap
+    );
     align-self: flex-start;
 
-
     &__title {
-      display: flex;
-      flex-direction: column;
+      @include flex-container(
+        $direction: column,
+        $justify-content: null,
+        $align-items: null,
+        $flex-wrap: nowrap
+      );
       .product-bag-name {
         @include font(
           $font-family: DM-Sans,
@@ -40,8 +48,8 @@
           $font-style: null
         );
         margin-bottom: 5px;
-        line-height:21px ;
-        letter-spacing:0.2px ;
+        line-height: 21px;
+        letter-spacing: 0.2px;
       }
       .product-bag-cost {
         @include font(
@@ -52,7 +60,7 @@
           $font-style: null
         );
         line-height: 21px;
-        letter-spacing:0.2px ;
+        letter-spacing: 0.2px;
       }
     }
     &__controls {

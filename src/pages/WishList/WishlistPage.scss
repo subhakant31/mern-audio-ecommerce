@@ -1,21 +1,25 @@
-@import "../../styles/index.scss";
+@import "../../styles/partials/font";
+@import "../../styles/partials/mixins";
+@import "../../styles/partials/reset";
+@import "../../styles/partials/variable";
+
 
 .wishlist-item-container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-between;
+  @include flex-container(
+    $direction: column,
+    $justify-content: space-between,
+    $align-items: center,
+    $flex-wrap: nowrap
+  );
   padding: 35px 25px;
   .product-bag-details__data {
     flex-direction: row;
-    
   }
-  .product-item-delete   {
+  .product-item-delete {
     margin-left: 60px;
-}
+  }
 
   .controls {
     display: none;
-    
   }
 }

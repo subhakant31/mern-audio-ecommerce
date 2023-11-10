@@ -1,9 +1,15 @@
-@import "../../../styles/index.scss";
+@import "../../../styles/partials/variable";
+@import "../../../styles/partials/mixins";
+
 
 .controls {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include flex-container(
+    $direction: null,
+    $justify-content: space-between,
+    $align-items: center,
+    $flex-wrap: nowrap
+  );
+  
   &__minus , &__plus {
     border-radius: 10px;
     border: 1px solid $color-grey-2;
