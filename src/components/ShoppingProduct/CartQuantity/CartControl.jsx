@@ -10,8 +10,7 @@ function CartControl() {
           alt="minus a product"
         />
       </a>
-
-      <p className="controls__number">1</p>
+      <span className="controls__number">1</span>
 
       <a href="" className="controls__plus">
         <img src="./assets/images/icons/productadd.svg " alt="add a product" />

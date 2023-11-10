@@ -1,6 +1,7 @@
-@import "../../../styles/index.scss";
+@import '../../../styles/partials/mixins';
+@import '../../../styles/partials/variable';
 
-.settings {
+.profile-settings {
   border-top: 1px solid $color-grey-2;
   width: 100%;
   box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.15);
@@ -9,7 +10,7 @@
       $direction: column,
       $justify-content: null,
       $align-items: flex-start,
-      $flex-wrap: nowrap
+      $flex-wrap: null
     );
 
     &__title {
@@ -28,17 +29,19 @@
     .settings-list {
       width: 100%;
       &__item {
-        padding: 20px 24px;
+       
         @include flex-container(
           $direction: column,
           $justify-content: null,
           $align-items: flex-start,
-          $flex-wrap: nowrap
+          $flex-wrap: null
         );
         box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
       }
       &__link {
+        width: 100%;
         text-transform: capitalize;
+        padding: 20px 24px;
         letter-spacing: 0.2px;
         line-height: 18px;
         @include font(
