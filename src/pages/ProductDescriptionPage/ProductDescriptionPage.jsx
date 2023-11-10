@@ -4,7 +4,7 @@ import ProductOverview from "../../components/ProductDetails/ProductOverview/Pro
 import ProductFeatures from "../../components/ProductDetails/ProductFeatures/ProductFeatures";
 import ProductSpecification from "../../components/ProductDetails/ProductSpecification/ProductSpecification";
 import ProductActionButton from "../../components/ProductActionButton/ProductActionButton";
-
+import ProductActionButtonWithArrow from "../../components/ProductActionButtonWithArrow/ProductActionButtonWithArrow";
 function ProductDescriptionPage() {
   const [selectedNavItem, setSelectedNavItem] = useState("overview");
 
@@ -79,6 +79,11 @@ function ProductDescriptionPage() {
         ariaLabelText="add this item to cart"
         buttonText="add to cart"
       />
+      <ProductActionButtonWithArrow
+        title="add to cart"
+        ariaLabelText="add this item to cart"
+        buttonText="add to cart"
+      ></ProductActionButtonWithArrow>
     </div>
   );
 }
