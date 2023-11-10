@@ -3,6 +3,7 @@
 
 .product-cart-details {
   width: 100%;
+  padding: 35px 25px;
   @include flex-container(
     $direction: null,
     $justify-content: center,

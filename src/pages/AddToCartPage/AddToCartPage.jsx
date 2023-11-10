@@ -5,7 +5,7 @@ import CheckoutCart from '../../components/ProductActionButtonWithArrow/ProductA
 import ProductItem from "../../components/ShoppingProduct/ProductItem/ProductItem";
 function AddToCartPage() {
   return (
-    <div className="cartcontainer">
+    <div className="cart-container">
       <ProductItem></ProductItem>
       <CartTotalCost></CartTotalCost>
       <CheckoutCart
