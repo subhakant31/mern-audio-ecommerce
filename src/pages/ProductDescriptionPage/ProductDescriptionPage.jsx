@@ -94,11 +94,6 @@ function ProductDescriptionPage() {
           ariaLabelText="add this item to cart"
           buttonText="add to cart"
         />
-        <ProductActionButtonWithArrow
-          title="add to cart"
-          ariaLabelText="add this item to cart"
-          buttonText="add to cart"
-        ></ProductActionButtonWithArrow>
       </div>
     </>
   );
