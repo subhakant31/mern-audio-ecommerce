@@ -42,3 +42,7 @@
         }
     }
 }
+
+.signUp .form__input:has( input[type=password]) {
+    margin-bottom: 50px;
+  }
