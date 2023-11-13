@@ -31,21 +31,21 @@ function SignUp() {
             />
             <ProductActionButton buttonText="Sign Up" aria-label="Sign Up" title="Sign Up"/>
             <ul className="form__list">
-                <li className="form__list__listitem"><a href="#" aria-label="Appstore" title="Appstore">
+                <li className="form__list__listitem"><a href="/" aria-label="Appstore" title="Appstore">
                     <img
                         className="item"
                         src='./assets/images/apple.svg'
                         alt="apple logo"
                     /></a>
                 </li>
-                <li className="form__list__listitem"><a href="#" aria-label="facebook" title="facebook">
+                <li className="form__list__listitem"><a href="/" aria-label="facebook" title="facebook">
                     <img
                         className="item"
                         src='./assets/images/facebook-f.svg'
                         alt="facebook logo"
                     /></a>
                 </li>
-                <li className="form__list__listitem"><a href="#" aria-label="playstore" title="playstore">
+                <li className="form__list__listitem"><a href="/" aria-label="playstore" title="playstore">
                     <img
                         className="item"
                         src='./assets/images/google.svg'
@@ -54,7 +54,7 @@ function SignUp() {
                 </li>
             </ul>
             <p className="form__account">
-                If you have an account? <a href="#" aria-label="Sign In Here" title="Sign In Here" className="form__account__redirect">
+                If you have an account? <a href="/" aria-label="Sign In Here" title="Sign In Here" className="form__account__redirect">
                      Sign In here
                 </a>
             </p>
