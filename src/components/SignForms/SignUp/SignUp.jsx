@@ -5,7 +5,7 @@ import ProductActionButton from "../../ProductActionButton/ProductActionButton";
 
 function SignUp() {
     return (
-        <form className="form">
+        <form className="form signUp">
             <InputField
                 for="mail"
                 id="mail"
@@ -14,9 +14,9 @@ function SignUp() {
                 type="email"
                 title="Email"
                 icon={faEnvelope}
-                ariarequired="true"
+                ariarequired={true}
                 arialabel="Email"
-              
+                passwordValidator = {false}
             />
             <InputField
                 for="password"
@@ -27,7 +27,8 @@ function SignUp() {
                 title="Password"
                 icon={faLock}
                 arialabel="Password"
-                ariarequired="true"
+                ariarequired={true}
+                passwordValidator ={true}
             />
             <ProductActionButton buttonText="Sign Up" aria-label="Sign Up" title="Sign Up"/>
             <ul className="form__list">
