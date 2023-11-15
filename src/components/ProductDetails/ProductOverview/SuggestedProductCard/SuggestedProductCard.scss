@@ -4,7 +4,7 @@
 .suggested-product-card {
   background-color: $color-white;
   width: fit-content;
-  height: 213px;
+  height: fit-content;
   margin-right: 15px;
   padding: 15px 10px;
   border-radius: 15px;
@@ -34,6 +34,49 @@
     img {
       width: 125px;
       height: 125px;
+    }
+  }
+  &__rating-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 11px;
+    .fa-ellipsis-vertical {
+      height: 20px;
+      width: 20px;
+      padding: 3.33px 0;
+    }
+    &__rating-review {
+      display: flex;
+      align-items: center;
+
+      .rating {
+        display: flex;
+        align-items: center;
+        .fa-star {
+          color: #ffc120;
+          height: 11px;
+          width: 11px;
+        }
+        .rating-value {
+          font-family: DM-Sans;
+          font-size: $xx-small;
+          font-weight: 400;
+          line-height: 0.8125rem;
+          letter-spacing: 0.0125rem;
+
+          margin-left: 3px;
+        }
+      }
+      .reviews {
+        font-family: DM-Sans;
+        font-size: $xx-small;
+        font-weight: $regular;
+        line-height: 0.8125rem;
+        letter-spacing: 0.0125rem;
+
+        margin-left: 10px;
+      }
     }
   }
 }

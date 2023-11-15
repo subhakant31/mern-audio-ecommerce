@@ -9,10 +9,36 @@ function MoreProducts(props) {
         <a href="#">see all</a>
       </div>
       <ul className="more-products__more-product-list">
-        <SuggestedProductCard></SuggestedProductCard>
-        <SuggestedProductCard></SuggestedProductCard>
-        <SuggestedProductCard></SuggestedProductCard>
-        <SuggestedProductCard></SuggestedProductCard>
+        <SuggestedProductCard
+          productName="TMA-2 HD Wireless"
+          productPrice={350}
+          hasRatingDetails={false}
+        ></SuggestedProductCard>
+        <SuggestedProductCard
+          productName="TMA-2 HD Wireless"
+          productPrice={350}
+          hasRatingDetails={false}
+        ></SuggestedProductCard>
+        <SuggestedProductCard
+          productName="TMA-2 HD Wireless"
+          productPrice={350}
+          hasRatingDetails={false}
+        ></SuggestedProductCard>
+        <SuggestedProductCard
+          productName="TMA-2 HD Wireless"
+          productPrice={350}
+          hasRatingDetails={false}
+        ></SuggestedProductCard>
+        <SuggestedProductCard
+          productName="TMA-2 HD Wireless"
+          productPrice={350}
+          hasRatingDetails={false}
+        ></SuggestedProductCard>
+        <SuggestedProductCard
+          productName="TMA-2 HD Wireless"
+          productPrice={350}
+          hasRatingDetails={false}
+        ></SuggestedProductCard>
       </ul>
     </div>
   );
