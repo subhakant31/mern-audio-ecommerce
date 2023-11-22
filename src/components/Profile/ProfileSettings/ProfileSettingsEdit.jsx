@@ -1,5 +1,6 @@
 import React from "react";
 import "./ProfileSettingsEdit.scss"; 
+import { Link } from "react-router-dom";
 
 function ProfileSettingsEdit() {
   return (
