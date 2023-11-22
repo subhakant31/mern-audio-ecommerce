@@ -16,7 +16,7 @@ function WishlistPage() {
         title="whislist"
         rightIcon={faTrash}
          ></TitleComp>
-      <ProductItem></ProductItem>
+      <ProductItem ></ProductItem>
       <ProductActionButton
         title="add to cart"
         ariaLabelText="add this item to cart"
