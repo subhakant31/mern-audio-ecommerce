@@ -1,5 +1,5 @@
 import "./HomePage.scss";
-import HomeMenu from "../../components/Menu/HomeMenu";
+import HomeMenu from "../../components/HomeMenu/HomeMenu";
 import SearchComponent from "../../components/SearchComponent/SearchComponent";
 import ProductCategory from "../../components/ProductCategory/ProductCategory";
 import MoreProducts from "../../components/MoreProducts/MoreProducts";

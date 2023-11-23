@@ -2,6 +2,7 @@ import "./SignUp.scss";
 import { faEnvelope, faLock } from "@fortawesome/free-solid-svg-icons";
 import InputField from "../InputField/InputField";
 import ProductActionButton from "../../ProductActionButton/ProductActionButton";
+import { Link } from "react-router-dom";
 
 function SignUp() {
     return (
@@ -55,9 +56,9 @@ function SignUp() {
                 </li>
             </ul>
             <p className="form__account">
-                If you have an account? <a href="/" aria-label="Sign In Here" title="Sign In Here" className="form__account__redirect">
+                If you have an account? <Link to="/login" aria-label="Sign In Here" title="Sign In Here" className="form__account__redirect">
                      Sign In here
-                </a>
+                </Link>
             </p>
         </form>
     );

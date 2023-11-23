@@ -1,5 +1,6 @@
 import React from "react";
 import "./ProfileSettingsEdit.scss"; 
+import {Link} from "react-router-dom";
 
 function ProfileSettingsEdit() {
   return (
@@ -15,7 +16,7 @@ function ProfileSettingsEdit() {
               <a href="" aria-label="notifications"className="settings-list__link">notifications</a>
             </li>
             <li className="settings-list__item">
-              <a href="" aria-label="wishlist" className="settings-list__link">wishlist</a>
+              <Link to="/wishlist" aria-label="wishlist" className="settings-list__link">wishlist</Link>
             </li>
           </ul>
         </div>
@@ -23,10 +24,10 @@ function ProfileSettingsEdit() {
           <h3 className="profile-settings__column__title">legal</h3>
           <ul  className="settings-list">
             <li className="settings-list__item">
-              <a href="" aria-label="lterms of use" className="settings-list__link">terms of use</a>
+              <Link to="/termsofuse" aria-label="terms of use" className="settings-list__link">terms of use</Link>
             </li>
             <li className="settings-list__item">
-              <a href="" aria-label="privacy policy" className="settings-list__link">privacy policy</a>
+              <Link to="/privacyPolicy" aria-label="privacy policy" className="settings-list__link">privacy policy</Link>
             </li>
           </ul>
         </div>

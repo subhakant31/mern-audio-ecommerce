@@ -1,5 +1,6 @@
 import React from "react";
 import "./HomeMenu.scss";
+import { Link } from "react-router-dom";
 
 function HomeMenu() {
   return (
@@ -13,9 +14,9 @@ function HomeMenu() {
         <h3 className="home-menu__brand__name">audio</h3>
       </a>
 
-      <a href="" className="home-menu__profile"  aria-label="got to profile settings page">
+      <Link to="/profile" className="home-menu__profile"  aria-label="got to profile settings page">
         <img src="./assets/images/userImage.png" alt="profile picture" />
-      </a>
+      </Link>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './TitleComp.scss';
+import { Link } from "react-router-dom";
 
 function TitleComp(props){
     let leftIconLabel = props.leftIconLabel;
@@ -8,13 +9,15 @@ function TitleComp(props){
     let rightIcon = props.rightIcon;
     let state = props.state;
     let title = props.title;
+    let rightPath = props.rightPath;
+    let leftPath = props.leftPath;
 
     return(
         <div className='title'>
             <ul className='title__list'>
-                <li><a href="/" aria-label={leftIconLabel} title={leftIconLabel}><FontAwesomeIcon className='title__list__icon' icon={leftIcon} /></a></li>
+                <li><Link to={leftPath} aria-label={leftIconLabel} title={leftIconLabel}><FontAwesomeIcon className='title__list__icon' icon={leftIcon} /></Link></li>
                 <li className={`title__list__text ${state}`}>{title}</li>
-                <li><a href="/" aria-label={rightIconLabel} title={rightIconLabel}><FontAwesomeIcon className='title__list__icon' icon={rightIcon} /></a></li>
+                <li><Link to={rightPath} aria-label={rightIconLabel} title={rightIconLabel}><FontAwesomeIcon className='title__list__icon' icon={rightIcon} /></Link></li>
             </ul>
         </div>
     )
