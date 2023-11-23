@@ -14,7 +14,7 @@ function HomeMenu() {
         <h3 className="home-menu__brand__name">audio</h3>
       </a>
 
-      <Link to="/profile" className="home-menu__profile"  aria-label="got to profile settings page">
+      <Link to="profile" className="home-menu__profile"  aria-label="got to profile settings page">
         <img src="./assets/images/userImage.png" alt="profile picture" />
       </Link>
     </div>
