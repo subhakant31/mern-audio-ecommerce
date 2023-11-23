@@ -14,7 +14,7 @@ export default function HomePage() {
         subHeading="What are you looking for today?"
       />
 
-      <SearchComponent />
+      <SearchComponent searchPageRedirect={true}/>
       <main className="home-page__main">
         <ProductCategory />
 

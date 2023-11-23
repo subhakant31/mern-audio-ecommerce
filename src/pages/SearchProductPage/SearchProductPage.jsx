@@ -18,7 +18,7 @@ function SearchProductPage(props) {
         rightIcon={faCartShopping}
         rightPath = "/cart"
       ></TitleComp>
-      <SearchComponent></SearchComponent>
+      <SearchComponent searchPageRedirect={false}></SearchComponent>
       <div className="search-product-page__latest-search">
         <h2 className="search-product-page__latest-search__heading">
           Latest Search

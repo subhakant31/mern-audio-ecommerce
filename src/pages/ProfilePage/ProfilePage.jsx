@@ -17,7 +17,6 @@ function ProfilePage() {
         leftIconState = "show"
         rightIconState = "hide"
         title="Profile"
-        leftPath = "/home"
          ></TitleComp>
       <ProfileData></ProfileData>
       <ProfileSettings></ProfileSettings>

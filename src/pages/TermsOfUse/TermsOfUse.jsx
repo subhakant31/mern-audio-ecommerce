@@ -10,7 +10,6 @@ function TermsOfUse() {
         leftIconLabel="go back"
         state="show"
         title="Terms of Use"
-        leftPath="/profile"
       ></TitleComp>
       <ol className="terms__list">
         <li>

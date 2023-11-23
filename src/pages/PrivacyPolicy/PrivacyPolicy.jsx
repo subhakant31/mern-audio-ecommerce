@@ -10,7 +10,6 @@ function PrivacyPolicy() {
         leftIconLabel="go back"
         state="show"
         title="Privacy Policy"
-        leftPath="/profile"
       ></TitleComp>
       <ol className="policy__list">
         <li>
