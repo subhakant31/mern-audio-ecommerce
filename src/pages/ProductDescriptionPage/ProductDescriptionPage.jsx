@@ -21,6 +21,7 @@ function ProductDescriptionPage() {
       <TitleComp
         leftIcon={faChevronLeft}
         rightIcon={faCartShopping}
+        rightPath="/cart"
       ></TitleComp>
       <div className="product-description">
         <span className="product-description__price">USD 350</span>
