@@ -16,7 +16,7 @@ function SignIn(){
             <InputField for="password" id="password" placeholder="Password" name="password" type="password" icon ={faLock} title="Password" arialabel="Password" ariarequired={true} autocomplete="current-password"/>
             <a href="/" aria-label="Forgot Password" title="Forgot Password" className='form__forgot'>Forgot Password</a>
             <ProductActionButton buttonText="Sign In" aria-label="Sign In" title="Sign In" path = "/home" />
-            <p className='form__account'>Didn't have an account? <Link to="/" aria-label="Sign Up Here" title="Sign Up Here" className='form__account__redirect'> Sign Up here</Link></p>
+            <p className='form__account'>Didn't have an account? <Link to="/signup" aria-label="Sign Up Here" title="Sign Up Here" className='form__account__redirect'> Sign Up here</Link></p>
         </form>
     )
 }

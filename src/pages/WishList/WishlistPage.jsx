@@ -15,6 +15,7 @@ function WishlistPage() {
         state="show"
         title="whislist"
         rightIcon={faTrash}
+        leftPath="/profile"
          ></TitleComp>
       <ProductItem ></ProductItem>
       <ProductActionButton
