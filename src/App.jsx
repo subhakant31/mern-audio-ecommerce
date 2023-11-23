@@ -11,7 +11,7 @@ import WishlistPage from "./pages/WishList/WishlistPage";
 import AddToCartPage from "./pages/AddToCartPage/AddToCartPage";
 import SearchProductPage from "./pages/SearchProductPage/SearchProductPage";
 import ResultsPage from "./pages/ResultsPage/ResultsPage";
-import ProductDescriptionPage from "./pages/ProductDescriptionPage/ProductDescriptionPage";
+import ProductDescriptionPage from "./pages/ProductDescriptionPage/ProductDescriptionPage";import ProductDescriptionPage from "./pages/ProductDescriptionPage/ProductDescriptionPage";
 
 function App() {
   return (
@@ -31,5 +31,6 @@ function App() {
       </Routes>
     </React.Fragment>
   );
+;
 }
 export default App;
