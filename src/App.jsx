@@ -27,6 +27,5 @@ function App() {
         <Route path = "/searchPage" element = {<SearchProductPage />} />
       </Routes>
     </React.Fragment>
-  );
-}
+  )}
 export default App;
