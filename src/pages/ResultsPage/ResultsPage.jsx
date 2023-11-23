@@ -21,7 +21,7 @@ function ResultsPage() {
         rightPath="/cart"
         leftPath='/searchPage'
       ></TitleComp>
-      <PageHeaders heading="headphone" subHeading="TMA Wireless"></PageHeaders>
+      <PageHeaders heading="Results for" subHeading="TMA Wireless"></PageHeaders>
       <FilterCategory />
       <ul className="specified-product-list">
         <SuggestedProductCard

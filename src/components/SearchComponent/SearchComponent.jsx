@@ -25,11 +25,17 @@ export default function SearchComponent({searchPageRedirect}) {
         setSearchValue(() => '');
     }
 
+    function resultPageHandler(event){
+        if(event.key === "Enter") {
+            navigate('/results')
+        }
+    }
+
     return (
         <form className="search-bar" onSubmit={handleSearch}>
             <label htmlFor="searchInput" className="visually-hidden">Search for Products</label>
             <FontAwesomeIcon className="search-bar__icon" aria-hidden="true" icon={faSearch} />
-            <input type="text" id="searchInput" value={searchValue} onChange={inputHandler} onFocus={navigateToSearchPageHandler} placeholder="Search headphone" aria-label='search' aria-autocomplete='list'/>
+            <input type="text" id="searchInput" value={searchValue} onChange={inputHandler} onFocus={navigateToSearchPageHandler} onKeyDown={resultPageHandler} placeholder="Search headphone" aria-label='search' aria-autocomplete='list'/>
         </form>
     )
 }

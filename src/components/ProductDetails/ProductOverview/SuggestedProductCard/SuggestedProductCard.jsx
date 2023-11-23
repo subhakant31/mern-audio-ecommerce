@@ -2,13 +2,14 @@ import "./SuggestedProductCard.scss";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEllipsisVertical, faStar } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 function SuggestedProductCard(props) {
   const productName = props.productName; // name of the product
   const productPrice = props.productPrice; //price of the product
   const hasRatingDetails = props.hasRatingDetails; //a flag that shows whether product rating is shown
   return (
-    <a
-      href="/"
+    <Link
+      to="/productdetails"
       className="suggested-product-card"
       title={productName}
       aria-label={productName}
@@ -76,7 +77,7 @@ function SuggestedProductCard(props) {
           </span>
         </div>
       )}
-    </a>
+    </Link>
   );
 }
 
