@@ -16,6 +16,7 @@ function SearchProductPage(props) {
         state="show"
         title="Search"
         rightIcon={faCartShopping}
+        rightPath = "/cart"
       ></TitleComp>
       <SearchComponent></SearchComponent>
       <div className="search-product-page__latest-search">
