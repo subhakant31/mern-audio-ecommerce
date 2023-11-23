@@ -11,22 +11,77 @@ import {
 
 function ResultsPage() {
   return (
-    <>
+    <div className="results-page">
       <TitleComp
         leftIcon={faChevronLeft}
         leftIconLabel="go back"
         state=""
         title=" "
         rightIcon={faCartShopping}
+        rightPath="/cart"
+        leftPath='/searchPage'
       ></TitleComp>
       <PageHeaders heading="headphone" subHeading="TMA Wireless"></PageHeaders>
       <FilterCategory />
-      <SuggestedProductCard
-        productName="TMA-2 HD Wireless"
-        productPrice={350}
-        hasRatingDetails={true}
-      />
-    </>
+      <ul className="specified-product-list">
+        <SuggestedProductCard
+          productName="TMA-2 HD Wireless"
+          productPrice={350}
+          hasRatingDetails={true}
+        />
+        <SuggestedProductCard
+          productName="TMA-2 HD Wireless"
+          productPrice={350}
+          hasRatingDetails={true}
+        />
+        <SuggestedProductCard
+          productName="TMA-2 HD Wireless"
+          productPrice={350}
+          hasRatingDetails={true}
+        />
+        <SuggestedProductCard
+          productName="TMA-2 HD Wireless"
+          productPrice={350}
+          hasRatingDetails={true}
+        />
+        <SuggestedProductCard
+          productName="TMA-2 HD Wireless"
+          productPrice={350}
+          hasRatingDetails={true}
+        />
+        <SuggestedProductCard
+          productName="TMA-2 HD Wireless"
+          productPrice={350}
+          hasRatingDetails={true}
+        />
+        <SuggestedProductCard
+          productName="TMA-2 HD Wireless"
+          productPrice={350}
+          hasRatingDetails={true}
+        />
+        <SuggestedProductCard
+          productName="TMA-2 HD Wireless"
+          productPrice={350}
+          hasRatingDetails={true}
+        />
+        <SuggestedProductCard
+          productName="TMA-2 HD Wireless"
+          productPrice={350}
+          hasRatingDetails={true}
+        />
+
+        <SuggestedProductCard
+          productName="TMA-2 HD Wireless"
+          productPrice={350}
+          hasRatingDetails={true}
+        />
+        <SuggestedProductCard
+          productName="TMA-2 HD Wireless"
+          productPrice={350}
+          hasRatingDetails={true}
+        />
+      </ul>
+    </div>
   );
 }
 export default ResultsPage;

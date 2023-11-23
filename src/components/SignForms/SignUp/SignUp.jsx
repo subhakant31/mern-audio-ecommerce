@@ -56,7 +56,7 @@ function SignUp() {
                 </li>
             </ul>
             <p className="form__account">
-                If you have an account? <Link to="/login" aria-label="Sign In Here" title="Sign In Here" className="form__account__redirect">
+                If you have an account? <Link to="/" aria-label="Sign In Here" title="Sign In Here" className="form__account__redirect">
                      Sign In here
                 </Link>
             </p>
