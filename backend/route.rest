@@ -1,0 +1,17 @@
+
+
+# POST http://localhost:3000/add_user
+# Content-Type: application/json
+
+# {
+#   "name": "John",
+#   "email":  "John@example.com",
+#   "password": "password"
+# }
+
+
+
+
+
+GET http://localhost:3000/users/65606f4775c50bc86444efd9
+Content-Type: application/json
