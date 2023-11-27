@@ -1,17 +1,24 @@
 
 
-# POST http://localhost:3000/add_user
+# POST http://localhost:3000/api/validate_user
 # Content-Type: application/json
 
 # {
 #   "name": "John",
-#   "email":  "John@example.com",
-#   "password": "password"
+#   "email":  "kunasvcsl@example.com",
+#   "password": "Cyber"
+# }
+
+# POST http://localhost:3000/api/add_user
+# Content-Type: application/json
+
+# {
+#   "name": "John",
+#   "email":  "kunasvcsl@example.com",
+#   "password": "Cyber"
 # }
 
 
 
-
-
-GET http://localhost:3000/users/65606f4775c50bc86444efd9
-Content-Type: application/json
+# GET http://localhost:3000/api/users/
+# Content-Type: application/json
