@@ -1,5 +1,5 @@
 const express = require("express");
-const { User } = require("./modals/user");
+const { User } = require("./models/user");
 const bcrypt = require("bcrypt");
 
 const app = express();
@@ -7,10 +7,8 @@ const saltRounds = 10;
 
 app.post("/api/add_user", async (request, response) => {
   const userModal = new User({ ...request.body });
-
   try {
     const user = await User.findOne({ email: userModal.email });
-
     if (user) {
       return response.json("Already have an account");
     } else {
@@ -20,9 +18,12 @@ app.post("/api/add_user", async (request, response) => {
         name: userModal.name,
         email: userModal.email,
       });
-      const createdUser = await hashUser.save();
 
-      return response.status(200).json(createdUser);
+      const createdUser = await hashUser.save();
+      return response.status(200).json({
+        message: "Account successfully created",
+        isAccountCreated: true,
+      });
     }
   } catch (error) {
     response.status(500).send(error);
@@ -39,9 +40,15 @@ app.post("/api/validate_user", async (request, response) => {
       const isMatched = await bcrypt.compare(userModal.password, user.password);
 
       if (isMatched) {
-        return response.status(200).json("User is logged in.");
+        return response.status(200).json({
+          message: "User is logged in",
+          isLoggedIn: true,
+        });
       } else {
-        return response.status(200).json("Password is incorrect");
+        return response.status(200).json({
+          message: "Email/password is incorrect",
+          isLoggedIn: false,
+        });
       }
     } else {
       return response.json("There is no account associated with this email.");
