@@ -14,12 +14,15 @@ function InputField(props) {
   let required = props.ariarequired;
   let autocomplete = props.autocomplete;
   let passwordValidator = props.passwordValidator;
-  
+
+  let setEmail = props.setEmail;
+  let setPassword = props.setPassword;
+
   const [errorMessage, setErrorMessage] = useState(null);
   const [show, setShow] = useState();
 
-  function isValidPassword(e) {
-    if (type === "password" && passwordValidator===true) {
+  function handleChange(e) {
+    if (type === "password" && passwordValidator === true) {
       let new_pass = e.target.value;
       var lowerCase = /[a-z]/g;
       if (new_pass.length < 3) {
@@ -31,12 +34,20 @@ function InputField(props) {
         setShow("show");
       }
     }
+    if (type === "password") {
+      let new_pass = e.target.value;
+      setPassword(new_pass);
+    }
+    if (type === "email") {
+      let new_email = e.target.value;
+      setEmail(new_email);
+    }
   }
 
   return (
-    <div className="form__input" tabIndex="0">
-      <label aria-hidden="true" for={forValue}></label>
-      <FontAwesomeIcon className="form__input__icon" icon={icon} />
+    <div className='form__input' tabIndex='0'>
+      <label aria-hidden='true' for={forValue}></label>
+      <FontAwesomeIcon className='form__input__icon' icon={icon} />
       <input
         type={type}
         id={id}
@@ -46,11 +57,15 @@ function InputField(props) {
         aria-label={arialabel}
         aria-required={required}
         auto-complete={autocomplete}
-        passwordValidator = {passwordValidator}
+        passwordValidator={passwordValidator}
         required
-        onChange={isValidPassword}
+        onChange={handleChange}
       ></input>
-      {errorMessage && <span className={`form__input__errorMessage ${show}`}>{errorMessage}</span>}
+      {errorMessage && (
+        <span className={`form__input__errorMessage ${show}`}>
+          {errorMessage}
+        </span>
+      )}
     </div>
   );
 }
